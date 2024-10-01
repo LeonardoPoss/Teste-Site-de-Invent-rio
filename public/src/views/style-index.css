@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%; /* Definindo a altura do cabeçalho */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgba(135, 120, 120, 0.5);
+    z-index: 1000; /* Manter o cabeçalho acima de outros elementos */
+}
+
+.header h1 {
+    margin: 0; /* Removendo a margem padrão do título */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Certifica-se de que o conteúdo flua verticalmente */
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    width: 100%; 
+    padding-top: 5%; 
+    /* background-color: rgba(224, 203, 203, 0.5); */
+    /* padding-bottom: 50px; Espaço para o rodapé */
+}
+
+.title-section {
+    display: flex;
+    background-color: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50vh;
+    border-radius: 7%;
+    padding: 1%;  /*Adiciona espaçamento interno */
+}
+
+/* .footer {
+    Mantém o rodapé fixo no fundo da página
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green; 
+}
+
+.footer-text {
+    text-align: center;
+    padding: 10px;  Ajusta o espaçamento do conteúdo no rodapé
+} */
