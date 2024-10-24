@@ -1,13 +1,15 @@
 class Usuario:
+    id = int 
     __nome =  str
     __senha = str
     __email = str
     __cargo = str
 
-    def __init__(self, nome, senha, cargo):
+    def __init__(self, nome, senha, cargo, email):
         self.__nome = nome 
         self.__senha = senha
         self.__cargo = cargo
+        self.__email = email
 
     @property
     def nome (self):
@@ -39,3 +41,7 @@ class Usuario:
     @cargo.setter
     def cargo (self, cargo):
         self.__cargo = cargo
+
+    def Cadastro ():
+        return 
+    
