@@ -8,8 +8,8 @@
     top: 0;
     width: 100%;
     height: 10%; /* Definindo a altura do cabeçalho */
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
-    background-color: rgba(135, 120, 120, 0.5);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgb(204, 221, 238);
     z-index: 1000; /* Manter o cabeçalho acima de outros elementos */
 }
 
@@ -22,34 +22,77 @@
     flex-direction: column; /* Certifica-se de que o conteúdo flua verticalmente */
     align-items: center;
     justify-content: center;
-    min-height: 85vh;
+    min-height: 80vh;
     width: 100%; 
     padding-top: 5%; 
-    /* background-color: rgba(224, 203, 203, 0.5); */
-    /* padding-bottom: 50px; Espaço para o rodapé */
 }
 
 .title-section {
     display: flex;
-    background-color: none;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgb(204, 221, 238);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 50vh;
-    border-radius: 7%;
+    width: 20%;
+    height: 20vh;
+    border-radius: 3%;
     padding: 1%;  /*Adiciona espaçamento interno */
 }
 
-/* .footer {
-    Mantém o rodapé fixo no fundo da página
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: green; 
+.input-user, .input-pass{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 20%;
+    margin-left:0%;
+    width: 205%;
+    padding: 5%;
+}
+.input-pass{
+    margin-bottom: 10%;
 }
 
-.footer-text {
-    text-align: center;
-    padding: 10px;  Ajusta o espaçamento do conteúdo no rodapé
-} */
+.Flex-container{
+    display: flex;
+    justify-content: space-between; 
+    width: 200%;
+    padding: 8%;
+    margin-left: 0%;
+    /* border-color: black;
+    border-style: dashed; */
+}
+
+.EsqueciSenha, .Login-BTN{
+    flex-direction: row;
+    width: 30%;
+    margin: 5%;
+    margin-top: 0%;
+}
+
+.EsqueciSenha{
+    font-size: 90%;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(255, 50, 50);
+    border: none;
+    border-radius: 4%;
+}
+.EsqueciSenha:hover{
+    cursor: pointer;
+    background-color: rgb(232, 11, 66);
+}
+
+.Login-BTN{
+    font-weight: bold;
+    color:white;
+    background-color: rgb(1, 140, 22);
+    border: none;
+    border-radius: 4%;
+}
+.Login-BTN:hover{
+    cursor: pointer;
+    background-color: rgb(10, 180, 22);
+}
+
+body{
+    background-color: whitesmoke;
+}
