@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory</title>
+    <title>Inventário de Amostras</title>
+    <link rel="shortcut icon" href="Public\icon\Logo estoque\Cardboard_box_with_packaging_signs_3D_icon-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="./public/src/views/style-index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="index">
     <header class="header">
-        <h1 class="header-title">Inventário</h1>
+        <h1 class="header-title">Inventário<img class="imagem-header" src="Public\icon\Estoque.png"></h1>
     </header>
     <main class="container">
         <section class="title-section">
@@ -16,11 +20,12 @@
                 <input class="input-user" type="text" placeholder="Usuário">
                 <input class="input-pass" type="password" placeholder="Senha">
                     <div class="Flex-container">
-                        <button class="EsqueciSenha" >Esqueci a Senha</button>
+                        <button id="EsqueciSenhaID" class="EsqueciSenha" >Esqueci a Senha</button>
                         <button id="Entrar" class="Login-BTN" >Entrar </button>
                     </div>
             </div>
         </section>
     </main>
 </body>
+<script type="module" src="Public\src\app.js"></script>
 </html>
