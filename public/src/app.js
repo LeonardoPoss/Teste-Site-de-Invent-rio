@@ -1,11 +1,12 @@
-import {EsqueciSenha} from './views/index.js'
+import {EsqueciSenha} from './views/Esqueci_a_Senha/Esqueci_a_Senha.js'
 
 switch (document.body.id) {
     case "index":
         document.addEventListener('DOMContentLoaded', ()=>{
             let EsqueciSenhaVAR = document.getElementById('EsqueciSenhaID');
-            
-                EsqueciSenhaVAR.addEventListener('click', EsqueciSenha())
+            if (EsqueciSenhaVAR){
+                EsqueciSenhaVAR.addEventListener('click', EsqueciSenha);
+            }
             
         })
         break;

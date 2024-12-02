@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10%; /* Definindo a altura do cabeçalho */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgb(204, 221, 238);
+    z-index: 1000; /* Manter o cabeçalho acima de outros elementos */
+    font-family: "Teko", sans-serif;
+    font-size: 200%;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* border-color: black;
+    border-style: dashed; */
+}

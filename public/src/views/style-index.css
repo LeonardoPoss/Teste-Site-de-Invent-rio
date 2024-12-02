@@ -15,18 +15,12 @@
     font-size: 200%;
     font-optical-sizing: auto;
     font-style: normal;
-    /* border-color: black;
-    border-style: dashed; */
 }
-.imagem-header{
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-    width: 5%;
-    height: 2%;
-    margin-top: 3%;
-    
-
+.imagem-header {
+    width: 40px; /* Tamanho fixo da largura */
+    height: 80px; /* Tamanho fixo da altura */
+    object-fit: contain; /* Garante que a imagem não seja distorcida */
+    margin-left: 15px; /* Espaço entre texto e imagem */
 }
 .header h1 {
     display: flex;
@@ -50,20 +44,28 @@
     background-color: rgb(204, 221, 238);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     align-items: center;
-    width: 20%;
-    height: 20vh;
+    width: 25%;
+    height: 20%;
     border-radius: 3%;
     padding: 1%;  /*Adiciona espaçamento interno */
+    box-sizing: border-box;
+}
+
+.login-box {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 .input-user, .input-pass{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 20%;
+    margin: 10%;
     margin-left:0%;
-    width: 205%;
-    padding: 5%;
+    width: 100%;
+    padding: 4%;
+    box-sizing: border-box;
 }
 .input-pass{
     margin-bottom: 10%;
@@ -72,11 +74,10 @@
 .Flex-container{
     display: flex;
     justify-content: space-between; 
-    width: 200%;
-    padding: 8%;
+    width: 100%;
+    padding: 1%;
     margin-left: 0%;
-    /* border-color: black;
-    border-style: dashed; */
+    box-sizing: border-box;
 }
 
 .EsqueciSenha, .Login-BTN{
@@ -89,30 +90,45 @@
     padding: 3%;
 }
 
-.EsqueciSenha{
+.EsqueciSenha {
     font-size: 90%;
     font-weight: bold;
-    color:white;
+    color: white;
     background-color: rgb(255, 50, 50);
     border: none;
     border-radius: 4%;
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+    width: 100%; /* Ajusta ao contêiner */
+    max-width: 150px; /* Define um tamanho máximo */
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Oculta texto excedente */
+    text-overflow: ellipsis; /* Mostra "..." se o texto for muito longo */
 }
-.EsqueciSenha:hover{
+
+.EsqueciSenha:hover {
     cursor: pointer;
     background-color: rgb(232, 11, 66);
 }
 
-.Login-BTN{
+.Login-BTN {
     font-weight: bold;
-    color:white;
+    color: white;
     background-color: rgb(1, 140, 22);
     border: none;
     border-radius: 4%;
+    box-sizing: border-box; /* Inclui padding no tamanho total */
+    width: 100%; /* Ajusta ao contêiner */
+    max-width: 150px; /* Define um tamanho máximo */
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Oculta texto excedente */
+    text-overflow: ellipsis; /* Mostra "..." se o texto for muito longo */
 }
-.Login-BTN:hover{
+
+.Login-BTN:hover {
     cursor: pointer;
     background-color: rgb(10, 180, 22);
 }
+
 
 body{
     background-color: whitesmoke;
