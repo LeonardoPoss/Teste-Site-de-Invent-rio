@@ -10,4 +10,6 @@ switch (document.body.id) {
             
         })
         break;
+    case "EsqueciSenha":
+        break;
 }
